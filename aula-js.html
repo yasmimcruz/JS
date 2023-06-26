@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>JS</title>
+    </head>
+
+    <body>
+    
+        <h2>JavaScript</h2>
+
+        <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+        Clique aqui.</button>
+
+        <p id="demo"></p>
+           
+        <br>
+
+        <p id="hello">JavaScript pode alterar conteúdos do HTML</p>
+
+        <button type="button" onclick='document.getElementById("hello").innerHTML = "Hello JavaScript!"'>
+             Click me!</button>
+
+             <br>
+
+            <button onclick="document.getElementById('myImage').src='Tanjirou_manga.png'">Bem</button>
+
+            <img id="myImage" src="tanjiro-oni.webp" style="width: 100px; height: 150px;">
+
+            <button onclick="document.getElementById('myImage').src='tanjiro-oni.webp'">Mau</button>
+
+            <br>
+
+            <p id="pato">ABC da Amazônia: Pato no tucupi</p>
+            <button onclick="document.getElementById('pato').style.backgroundColor='red'">pato</button>
+
+        <br>
+
+            <p id="display">JavaScript pode esconder/mostrar elementos de HTML </p>
+
+            <button type="button" onclick="document.getElementById('display').style.display='none'">Esconder conteúdo</button>
+            <button type="button" onclick="document.getElementById('display').style.display='block'">Mostrar conteúdo</button>
+
+        </body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inclui html</title>
+
+    <script>
+
+function dividir(){
+        var nUm = parseInt(document.getElementById('nUm').value, 10)
+        var nDois = parseInt(document.getElementById('nDois').value, 10)
+        var dividir = nUm / nDois
+        alert(dividir)
+        console.log(dividir)
+        document.getElementById('dividir').innerHTML = 'dividir'
+        
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <!--Atividade 1-->
+    <div id="preto">
+        <button onclick="document.getElementById('preto').style.backgroundColor='black'">preto</button>
+    </div>
+<br>
+
+    <!--Atividade 2-->
+    <p id="tamanho">O campeão da lista dos maiores animais existentes é a baleia azul (Balaenoptera musculus)</p>
+
+    <button type="button" onclick="document.getElementById('tamanho').style.fontSize='50px'">
+         cogumelo</button>
+<br><br>
+
+    <!--Atividade 3-->
+    <div id="borda">
+        <button onclick="document.getElementById('borda').style.border='solid 2px plum'">borda</button>
+    </div>
+<br><br>
+
+    <!--Atividade 4-->
+    <p id="bota">Por que bota a gente calça e calça a gente bota?</p>
+        <button type="button" onclick="document.getElementById('bota').style.textAlign='center'">
+             bota</button>
+<br><br>
+
+    <!--Atividade 5-->
+            <ul id="listinha" >
+                <li style="padding-right:50px;">MENU</li>
+                <li style="padding-right:50px;">PRODUTOS</li>
+                <li style="padding-right:50px;">SOBRE MIM</li>
+            </ul>
+            <button type="button" onclick="document.getElementById('listinha').style.display='flex'">
+                listinha</button>
+<br><br>
+
+    <!--Atividade 6-->
+        <p id="roxo">O termo púrpura atribui-se a um leque de tons entre o vermelho e o azul. Obtém-se misturando as cores primárias vermelho e azul.</p>
+            <button onclick="document.getElementById('roxo').style.color='purple'">
+                roxo</button>
+
+<br><br>
+
+                <div>
+                    <form>
+                        <label for="nUm"></label>
+                        <input type="number" id="nUm">
+                        <br>
+                        <label for="nDois"></label>
+                        <input type="number" id="nDois">
+                        <button onclick="dividir()">dividir</button>
+                        <p id="dividir"> o resultado da conta é:</p>
+                    </form>
+                </div>
+</body>
+</html>
