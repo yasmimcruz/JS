@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Avaliação_final</title>
+
+
+        <script>
+
+            function validar(){
+            
+                const anoAtual = 2023
+                const idadeMin = 18
+                
+                var Nome = document.getElementById('Nome').value;
+                var Email = document.getElementById('Email').value;
+                var Telefone = document.getElementById('Telefone').value;
+              
+
+                var nascimento = document.getElementById('nascimento').value;
+                var idade = anoAtual - nascimento; 
+
+                if(idade >= 18 ){
+                    alert('Olá ' + Nome + ', iremos enviar um e-mail de confirmação para o seu endereço eletrônico ' + Email + '. Também será enviado um código de confirmação pelo seu telefone ' + Telefone + '. Muito obrigado e boa sorte!' );
+                } else{
+                    alert('Obrigado, ' + Nome + '. Infelizmente não poderemos seguir com o seu cadastro pois sua idade não permite que você realize o vestibular.')
+                }
+            }
+
+        </script>
+
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    </head>
+
+    <body>
+
+        <form>
+
+            <label for="Nome">Nome:</label>
+            <input type="text" id="Nome" placeholder="Nome"><br>
+            
+            <label for="Telefone">Telefone:</label>
+            <input type="number" id="Telefone" placeholder="Telefone"><br>
+
+            <label for="Email">Email:</label>
+            <input type="email" id="Email" placeholder="Email"><br>
+
+            <label for="nascimento">Data de nascimento:</label>
+            <input type="number" id="nascimento" placeholder="Data de nascimento"><br>
+           
+            <label for="City">Cidade:</label>
+            <input type="text" id="City" placeholder="Cidade"><br>
+
+            <button type="button" class="btn btn-outline-success btn-lg" onclick="validar()">Validar</button>
+            <button type="button" class="btn btn-outline-danger btn-lg" onclick="limparFormulario()">Limpar Formulario</button>
+          </form>
+
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </body>
+</html>
