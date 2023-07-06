@@ -26,6 +26,16 @@
                 }
             }
 
+            function limpar(){
+
+                document.getElementById('Nome').value='';
+                document.getElementById('Telefone').value='';
+                document.getElementById('Email').value='';
+                document.getElementById('nascimento').value='';
+                document.getElementById('City').value='';
+            }
+
+
         </script>
 
 
@@ -52,7 +62,7 @@
             <input type="text" id="City" placeholder="Cidade"><br>
 
             <button type="button" class="btn btn-outline-success btn-lg" onclick="validar()">Validar</button>
-            <button type="button" class="btn btn-outline-danger btn-lg" onclick="limparFormulario()">Limpar Formulario</button>
+            <button type="button" class="btn btn-outline-danger btn-lg" onclick="limpar()">Limpar Formulario</button>
           </form>
 
 
